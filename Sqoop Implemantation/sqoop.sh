@@ -1,0 +1,11 @@
+sqoop import \
+--connect jdbc:postgresql://35.192.96.205:5432/Retail \
+--username postgres \
+--password u57*geJo \
+--table retail \
+--direct \
+--incremental append \
+--check-column Retail_ID \
+--last-value 1 \
+--target-dir /user/hdfs/Retail \
+-- --schema public

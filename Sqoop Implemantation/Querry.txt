@@ -1,0 +1,24 @@
+CREATE EXTERNAL TABLE IF NOT EXISTS default.retail (
+	Retail_ID STRING,
+	ID INT,
+	nomor_retail STRING,
+	is_website STRING,
+	kode_organisasi STRING ,
+	kode_div STRING ,
+	kode_unit STRING ,
+	Mutu STRING ,
+	Spesifikasi STRING ,
+	Volume_Penjualan DOUBLE ,
+	nama_proyek STRING ,
+	retail_method STRING ,
+	Kota STRING ,
+	Plant_Utama STRING ,
+	street STRING ,
+	street2 STRING ,
+	tgl_mulai_kontrak STRING 
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LOCATION '/user/hdfs/Retail';
+
+SELECT * FROM retail;
